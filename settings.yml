@@ -1,0 +1,45 @@
+enabled:
+  default: true
+  description: Enable the category logo.
+
+container:
+  default: body
+  type: string
+  description: CSS selector of the container to apply the style.
+
+ratio:
+  default: "landscape"
+  description: Ratio to display the category logo.
+  type: "enum"
+  choices:
+    - "square"
+    - "landscape"
+    - "portrait"
+
+max_width:
+  default: 150
+  description: Value between 25 et 500 to limit the maxium width of the category logo (in pixel). The logo won't exceed the width of its container.
+  type: float
+  min: 25
+  max: 500
+
+fit:
+  default: "contain"
+  description: The CSS function to use to sets how the category logo should be resized to fit its container. See <code>object-fit</code> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit">on MDN</a>.
+  type: "enum"
+  choices:
+    - "contain"
+    - "cover"
+    - "fill"
+    - "none"
+    - "scale-down"
+
+floating:
+  default: true
+  description: Should the category logo be floating.
+  type: bool
+
+subcategories_clear:
+  default: true
+  description: Should subcategories be bellow the category logo.
+  type: bool
