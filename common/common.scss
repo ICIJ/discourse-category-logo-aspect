@@ -1,5 +1,4 @@
 [style*="--category-logo-aspect-"] {
-  
   .category-logo.aspect-image,
   // Compatibility with "Category Jumbotron"
   // @see https: //github.com/ICIJ/discourse-category-jumbotron/
@@ -37,25 +36,22 @@
       width: 100%;
       height: 100%;
       max-height: none;
-      object-fit: var(--category-logo-aspect-fit, 'cover');
+      object-fit: var(--category-logo-aspect-fit, "cover");
     }
   }
 
   table.category-list {
-
     .category-logo.aspect-image {
       margin: 0.25rem 1rem 1rem 0;
     }
 
-    tr.has-logo>.category>.category-description {
-
+    tr.has-logo > .category > .category-description {
       html[style*="--category-logo-aspect-floating: true"] & {
         margin-left: var(--category-logo-aspect-max-width, 250px);
       }
     }
 
-    tr.has-logo>.category>.subcategories {
-
+    tr.has-logo > .category > .subcategories {
       [style*="--category-logo-aspect-subcategories-clear: false"] & {
         clear: none;
         margin-left: var(--category-logo-aspect-max-width, 250px);
@@ -67,5 +63,4 @@
       }
     }
   }
-
 }

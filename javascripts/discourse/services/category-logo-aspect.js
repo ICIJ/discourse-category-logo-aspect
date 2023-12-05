@@ -3,12 +3,12 @@ import { disableImplicitInjections } from "discourse/lib/implicit-injections";
 
 @disableImplicitInjections
 export default class CategoryLogoAspect extends Service {
-  VAR_ENALBED = '--category-logo-aspect-enabled';
-  VAR_FIT = '--category-logo-aspect-fit';
-  VAR_RATIO = '--category-logo-aspect-ratio';
-  VAR_MAX_WIDTH = '--category-logo-aspect-max-width';
-  VAR_FLOATING = '--category-logo-aspect-floating';
-  VAR_SUBCATEGORIES_CLEAR = '--category-logo-aspect-subcategories-clear';
+  VAR_ENALBED = "--category-logo-aspect-enabled";
+  VAR_FIT = "--category-logo-aspect-fit";
+  VAR_RATIO = "--category-logo-aspect-ratio";
+  VAR_MAX_WIDTH = "--category-logo-aspect-max-width";
+  VAR_FLOATING = "--category-logo-aspect-floating";
+  VAR_SUBCATEGORIES_CLEAR = "--category-logo-aspect-subcategories-clear";
 
   get fit() {
     return settings.fit;
@@ -27,7 +27,7 @@ export default class CategoryLogoAspect extends Service {
     return {
       square: 1,
       landscape: 9 / 16,
-      portrait: 16 / 9
+      portrait: 16 / 9,
     };
   }
 
