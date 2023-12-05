@@ -66,7 +66,7 @@ To install this component on your Discourse forum:
 1. Go to `Admin` > `Customize` > `Themes`.
 2. Click `Install`.
 3. Choose `From a git repository`.
-4. Enter the URL of the repository containing this component.
+4. Enter the URL of this repository: `https://github.com/ICIJ/discourse-category-logo-aspect`
 5. Click `Install`.
 
 ## Contributing
